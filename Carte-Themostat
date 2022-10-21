@@ -1,0 +1,51 @@
+type: custom:swiss-army-knife-card
+entities:
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: current_temperature
+    decimals: 1
+    name: Actuellement
+    unit: "\xB0C"
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: hvac_action
+    icon: mdi:radiator
+    name: Chauffage? 
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: temperature
+    decimals: 1
+    icon: mdi:thermostat-box
+    name: Souhaitable
+  - entity: sensor.ajout_sensor_humidite_salle_faimiliale
+    unit: '%'
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: hourly_kwh
+    decimals: 1
+    name: Heure
+    unit: kw
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: hourly_kwh_count
+    decimals: 1
+    unit: kw
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: daily_kwh
+    decimals: 1
+    name: Jour
+    unit: kw
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: daily_kwh_count
+    decimals: 1
+    unit: kw
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: monthly_kwh
+    decimals: 1
+    name: Mois
+    unit: kw
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: monthly_kwh_count
+    decimals: 1
+    unit: kw
+  - entity: climate.sinope_thermostat_salle_familiale
+    attribute: wattage
+    unit: w
+layout:
+    template:
+      name: sak_layout_mjt_thermostats_sinope
