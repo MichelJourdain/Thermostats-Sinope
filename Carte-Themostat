@@ -48,4 +48,4 @@ entities:
     unit: w
 layout:
     template:
-      name: sak_layout_mjt_thermostats_sinope
+      name: sak_layout_thermostats_sinope
